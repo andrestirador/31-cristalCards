@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassMorphsim</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Card 1-->
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card Uno</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo neque sapiente voluptatum obcaecati dolorem quam? Non delectus qui dolorum?</p>
+                <a href="#">Leer Mas...</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 2-->
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Dos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo neque sapiente voluptatum obcaecati dolorem quam? Non delectus qui dolorum?</p>
+                <a href="#">Leer Mas...</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 3-->
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Tres</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo neque sapiente voluptatum obcaecati dolorem quam? Non delectus qui dolorum?</p>
+                <a href="#">Leer Mas...</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Link efecto de movimiento-->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card")
+        ,{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
+</body>
+</html>
